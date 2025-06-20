@@ -7,3 +7,12 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_git_azspro2006.integrations:Call_refData
+  packages:
+  - name: SIQA_GIT_AZSPRO2006Project
+    version: "1.0"
+- serviceName: project.siqa_git_azspro2006.referencedata:refData1
+  packages:
+  - name: SIQA_GIT_AZSPRO2006Project
+    version: "1.0"
