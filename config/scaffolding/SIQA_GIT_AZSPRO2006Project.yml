@@ -8,6 +8,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
@@ -17,7 +18,25 @@ services:
   packages:
   - name: SIQA_GIT_AZSPRO2006Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: project.siqa_git_azspro2006.referencedata:refData1
   packages:
   - name: SIQA_GIT_AZSPRO2006Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: project.siqa_git_azspro2006.integrations:GitSyncFlow
+  packages:
+  - name: SIQA_GIT_AZSPRO2006Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2040
